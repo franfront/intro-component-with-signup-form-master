@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
@@ -27,12 +27,12 @@
             </header>
             
             <form class="form" id="form" >
-                <div class="form-field--error" data-error= "First Name cannot be empty">
+                <div class="form-field" data-error= "First Name cannot be empty">
                     <input type="text" name="name" placeholder="first name" class="form-input"/>
                 </div>
 
                 <div class="form-field" data-error= "Last Name cannot be empty">
-                    <input type="text" name="last-name" placeholder="last name" class="form-input"/>    
+                    <input type="text" name="surname" placeholder="last name" class="form-input"/>    
                 </div>
                 <div class="form-field" data-error= "Looks like this is not an email">
                     <input type="email" name="email" placeholder="email" class="form-input"/>
@@ -55,6 +55,6 @@
         </section>  
         
     </main>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
