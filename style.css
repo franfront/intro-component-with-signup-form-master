@@ -1,0 +1,121 @@
+:root{
+   --body: hsl(0, 100%, 74%);
+   --green : hsl(154, 59%, 51%);
+   --blue : hsl(248, 32%, 49%);
+   --dark-blue: hsl(249, 10%, 26%);
+   --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+    margin: 0px;
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: var(--body);
+    display: grid;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.text{
+    margin-bottom: 75px;
+}
+
+
+
+
+
+.section-header{
+    background-color: var(--blue);
+    padding: 5px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.section-ns span{
+    font-weight: 700;
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+.form-field--error{
+    position: relative;
+    margin-bottom: 20px;
+    border-color: var(--body);
+}
+
+
+.form-field--error .form-input{
+    outline: none;
+    border: none;
+    border: 2px solid var(--body);
+}
+
+.form-field--error::after{
+    content: attr(data-error);
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: red;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.form-field--error::before{
+    content: url(/images/icon-error.svg);
+    position:absolute;
+    right: 24px;
+    top: 25px;
+}
+
+
+::placeholder{
+    font-weight: 700px;
+}
+
+.form-input{
+    height: 50px;
+    width: 250px;
+    margin: 10px 0;
+    padding-left: 15px;
+    /*border-radius: 8px;*/
+}
+
+.form-submit{
+    width: 270px;
+    padding: 10px 50px;
+    background-color: var(--green);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  0 5px 0 rgb(60, 170, 122);;
+}
+
+.form-terms{
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+    width: 270px;
+}
+
+.form-terms a{
+
+    color: var(--body);
+    font-weight: 700;
+    text-decoration: none;
+}
