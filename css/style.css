@@ -17,12 +17,36 @@ body{
     padding: 0 25px;
 }
 
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 60px 20px;
+        text-align: left;
+       
+    }
+}
+
 .title{
     font-size: 1.5rem;
 }
 
+@media screen and (min-width:768px){
+    .title{
+        font-size: 3.5rem;
+    }
+}
+
 .text{
     margin-bottom: 75px;
+}
+
+@media screen and (min-width:768px){
+    .text{
+        font-size: 1.3rem;
+        padding-right: 40px;
+       
+    }   
 }
 
 
@@ -35,6 +59,14 @@ body{
     border-radius: 10px;
     margin-bottom: 25px;
     box-shadow: 0px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media  screen and (min-width: 768px) {
+    .section-header{
+        
+        text-align: center;
+        
+    }
 }
 
 
@@ -50,6 +82,13 @@ body{
     padding: 10px 0;
     position: relative;
 }
+
+@media screen and (min-wigth:768px) {
+    .form{
+        padding: 30px 0;
+    }    
+}
+
 
 
 .form-field--error{
@@ -93,8 +132,17 @@ body{
     width: 250px;
     margin: 10px 0;
     padding-left: 15px;
-    /*border-radius: 8px;*/
+    border-radius: 8px;
 }
+
+@media screen and (min-width: 768px){
+    .form-input{
+        width: 550px;
+       
+    }
+}
+
+
 
 .form-submit{
     width: 270px;
@@ -107,10 +155,27 @@ body{
     box-shadow:  0 5px 0 rgb(60, 170, 122);;
 }
 
+@media screen and (min-width: 768px) {
+    .form-submit{
+        width: 550px;
+        text-align: center;
+    }
+    
+}
+
+
 .form-terms{
     color: var(--grayish-blue);
     font-size: 0.8rem;
     width: 270px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .form-terms{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .form-terms a{
